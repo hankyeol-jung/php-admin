@@ -1,0 +1,12 @@
+.gnb_wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 25;
+  padding-top: 96px;
+  width: 271px;
+  border-right: 1px solid #f0f0f0;
+  background: #fff;
+  transition: width 0.5s;
+}

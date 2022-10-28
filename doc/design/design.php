@@ -43,7 +43,7 @@
                 <li class='menu-tab selected'>
                     <a href='#'>
                         <i class='fa-solid fa-house'></i>
-                        <span>ADMIN 홈</span>
+                        <span>엑티브</span>
                         <button type='button'>
                             <i class='fa-solid fa-angle-down'></i>
                         </button>
@@ -51,7 +51,7 @@
                     <ul>
                         <li class='selected'>
                             <a href='#'>
-                                <span>정보</span>
+                                <span>엑티브</span>
                             </a>
                         </li>
                         <li>
@@ -69,7 +69,14 @@
             </ul>
         </div>
         <div>
-            <h5>버튼</h5>
+            <h5>텍스트 디자인</h5>
+            <!-- 텍스트 디자인 -->
+            <h1 class='wrap_title'>
+                H1 타이틀
+            </h1>
+        </div>
+        <div>
+            <h5>버튼 디자인</h5>
             <!-- 네모버튼 디자인 -->
             <div>
                 <a href='#' class='btnSizeM'>글작성</a>

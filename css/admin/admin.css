@@ -2,3 +2,6 @@
 
 /* common */
 @import "/css/admin/common/design.css";
+
+/* components */
+@import "/css/admin/components/menu.css";

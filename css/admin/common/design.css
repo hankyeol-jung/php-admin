@@ -12,8 +12,6 @@ section.design h5 {
   margin-top: 0.5rem;
 }
 /* 메뉴 */
-.gnb_wrap {
-}
 .menu-tab_group {
   width: 240px;
   margin: 0 auto;
@@ -175,6 +173,15 @@ section.design h5 {
 .menu-tab > ul > li.selected > a:before {
   background: #eff5ff;
   opacity: 1;
+}
+
+/* 택스트 디자인 */
+.wrap_title {
+  color: #373f57;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: -3px;
+  line-height: 56px;
 }
 
 /* 노말 버튼  */
