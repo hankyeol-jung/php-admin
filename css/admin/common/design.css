@@ -12,11 +12,11 @@ section.design h5 {
   margin-top: 0.5rem;
 }
 /* 메뉴 */
-.menu-tab_group {
+.gnb {
   width: 240px;
   margin: 0 auto;
 }
-.menu-tab_group > li + li {
+.gnb > li + li {
   margin-top: 8px;
 }
 
@@ -109,6 +109,10 @@ section.design h5 {
   left: 12px;
   font-size: 10px;
   color: #5c667b;
+  transition: transform 0.3s;
+}
+.menu-tab.expanded > a > button > i {
+  transform: rotate(-180deg);
 }
 .menu-tab > ul {
   display: none;

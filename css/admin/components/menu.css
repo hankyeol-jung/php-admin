@@ -10,3 +10,69 @@
   background: #fff;
   transition: width 0.5s;
 }
+.gnb_wrap .btn_toggle_gnb {
+  display: inline-block;
+  position: absolute;
+  z-index: 5;
+  top: 28px;
+  right: 22px;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.gnb_wrap .btn_toggle_gnb:hover {
+  background-color: #f4f6fa;
+  border-color: #f4f6fa;
+}
+.gnb_wrap .btn_toggle_gnb i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  color: #afbac8;
+}
+.gnb_wrap .btn_toggle_gnb i.open_i {
+  display: none;
+}
+
+.closed .gnb_wrap {
+  width: 71px;
+  border-right: 1px solid #eaedf4;
+}
+.closed .btn_toggle_gnb {
+  right: -16px;
+  border-color: #eaedf4;
+}
+.closed .btn_toggle_gnb i.closed_i {
+  display: none;
+}
+.closed .btn_toggle_gnb i.open_i {
+  display: inline-block;
+}
+.closed .gnb_wrap .gnb {
+  width: 72px;
+}
+.closed .gnb_wrap .gnb > li > a {
+  padding-left: 0;
+}
+.closed .gnb_wrap .gnb > li > a:before {
+  width: 72px;
+}
+.closed .gnb_wrap .gnb > li > a > span,
+.closed .gnb_wrap .gnb > li > ul > li > a span {
+  font-size: 0;
+  text-indent: -9999px;
+}
+.closed .gnb_wrap .gnb > li.selected > a:before {
+  opacity: 1;
+}
+.closed .gnb_wrap .gnb > li > a > button,
+.closed .gnb_wrap .gnb > li.expanded > ul {
+  display: none;
+}
+.closed .gnb_wrap .gnb > li > a > i {
+  left: 24px;
+}
