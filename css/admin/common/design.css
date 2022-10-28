@@ -1,6 +1,27 @@
+section.design {
+  padding: 16px;
+}
+section.design h5 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.width271 {
+  width: 271px;
+}
+.mt-05 {
+  margin-top: 0.5rem;
+}
+/* 메뉴 */
+.gnb_wrap {
+}
 .menu-tab_group {
   width: 240px;
+  margin: 0 auto;
 }
+.menu-tab_group > li + li {
+  margin-top: 8px;
+}
+
 /* 메뉴 탭 버튼 */
 .menu-tab > a {
   display: block;
@@ -130,9 +151,6 @@
 .menu-tab > ul > li > a:hover::before {
   opacity: 1;
 }
-.menu-tab_group > li + li {
-  margin-top: 8px;
-}
 .menu-tab > ul > li + li {
   margin-top: 4px;
 }
@@ -157,4 +175,100 @@
 .menu-tab > ul > li.selected > a:before {
   background: #eff5ff;
   opacity: 1;
+}
+
+/* 노말 버튼  */
+.btnSizeM {
+  min-width: 124px;
+}
+.btnSizeM {
+  padding: 6px 12px 8px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.btnSizeM > i {
+  display: inline-block;
+  margin-right: 7px;
+  font-size: 16px;
+}
+.btnSizeS {
+  padding: 4px 8px;
+  height: 32px;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  line-height: 20px;
+}
+[class*="btnSize"] {
+  display: inline-block;
+  border: 1px solid #4876ef;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  letter-spacing: -1px;
+  text-align: center;
+  background-color: #4876ef;
+}
+[class*="btnSize"]:hover {
+  border-color: #3157dd;
+  background-color: #3157dd;
+  color: #fff;
+}
+[class*="btnSize"].colorBlueReverse {
+  border-color: #4876ef;
+  color: #4876ef;
+  background-color: #fff;
+}
+[class*="btnSize"].colorBlueReverse:hover {
+  color: #4876ef;
+  background-color: #eff5ff;
+}
+[class*="btnSize"].colorGrayReverse {
+  border-color: #d7dce5;
+  color: #5c667b;
+  background-color: #fff;
+}
+[class*="btnSize"].colorGrayReverse:hover {
+  background-color: #f4f6fa;
+}
+[class*="btnSize"].colorRedReverse {
+  border-color: #ff5656;
+  color: #dc3434;
+  background-color: #fff;
+}
+[class*="btnSize"].colorRedReverse:hover {
+  color: #dc3434;
+  background-color: #fef3f3;
+}
+
+.btn_basic_type02,
+.btn_basic_type04,
+.btn_basic_type05 {
+  display: inline-block;
+  padding: 7px 13px 7px;
+  height: 32px;
+  box-sizing: border-box;
+  font-size: 13px;
+  letter-spacing: -1px;
+  line-height: normal;
+  vertical-align: top;
+}
+.btn_basic_type04:hover,
+.btn_basic_type05:hover {
+  color: #fff;
+}
+.btn_basic_type02 {
+  border: 1px solid #dbdbdb;
+  color: #444;
+  background-color: #fff;
+}
+.btn_basic_type04 {
+  border: 1px solid #8f8f8f;
+  color: #fff;
+  background-color: #9c9c9c;
+}
+.btn_basic_type05 {
+  border: 1px solid #5f75eb;
+  color: #fff;
+  background-color: #7289f8;
 }
