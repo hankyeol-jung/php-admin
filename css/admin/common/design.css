@@ -1,0 +1,160 @@
+.menu-tab_group {
+  width: 240px;
+}
+/* 메뉴 탭 버튼 */
+.menu-tab > a {
+  display: block;
+  position: relative;
+  padding: 10px 0 14px 56px;
+  height: 44px;
+  box-sizing: border-box;
+}
+.menu-tab > a:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 240px;
+  height: 44px;
+  border-radius: 5px;
+  background: #f4f6fa;
+  transition: opacity 0.5s;
+  content: "";
+  opacity: 0;
+}
+.menu-tab > a:hover:before {
+  opacity: 1;
+}
+.menu-tab > a > i {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  z-index: 3;
+  font-size: 18px;
+  color: #afbac8;
+}
+.menu-tab > a > span {
+  display: block;
+  position: relative;
+  z-index: 2;
+  color: #5c667b;
+  font-size: 15px;
+  letter-spacing: -1px;
+  line-height: 24px;
+}
+.menu-tab > a > button {
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  z-index: 3;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  outline: 0;
+}
+.menu-tab > a > button:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background: #e8ebf2;
+  transition: transform 0.3s, opacity 0.6s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  content: "";
+  opacity: 0;
+}
+.menu-tab > a > button:hover:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.menu-tab > a > button:hover i {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  color: #222;
+}
+.menu-tab > a > button > i {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-size: 10px;
+  color: #5c667b;
+}
+.menu-tab > ul {
+  display: none;
+  padding: 4px 0 0 16px;
+}
+.menu-tab > ul > li {
+  position: relative;
+}
+.menu-tab > ul > li > a {
+  display: block;
+  position: relative;
+  padding: 8px 0 8px 40px;
+  box-sizing: border-box;
+}
+.menu-tab > ul > li > a span {
+  display: block;
+  position: relative;
+  z-index: 2;
+  color: #5c667b;
+  font-size: 14px;
+  letter-spacing: -1px;
+  line-height: 24px;
+}
+.menu-tab > ul > li > a:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 224px;
+  height: 40px;
+  border-radius: 5px;
+  background: #f4f6fa;
+  transition: opacity 0.5s;
+  content: "";
+  opacity: 0;
+}
+.menu-tab > ul > li > a:hover::before {
+  opacity: 1;
+}
+.menu-tab_group > li + li {
+  margin-top: 8px;
+}
+.menu-tab > ul > li + li {
+  margin-top: 4px;
+}
+
+.menu-tab.selected > a > i {
+  color: #4876ef;
+}
+.menu-tab.selected > a > span {
+  color: #4876ef;
+  font-weight: bold;
+}
+.menu-tab.selected > a > button > i {
+  color: #4876ef;
+}
+.menu-tab.selected > a:before {
+  background: #eff5ff;
+}
+.menu-tab > ul > li.selected > a span {
+  color: #4876ef;
+  font-weight: bold;
+}
+.menu-tab > ul > li.selected > a:before {
+  background: #eff5ff;
+  opacity: 1;
+}
